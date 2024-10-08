@@ -1,0 +1,26 @@
+服务器运行后，您可以开始向以下端点发出请求：
+
+嵌入 PDF 文件 (例如 resume.pdf) 的示例命令：
+
+
+
+$ curl --request POST \
+  --url http://localhost:8080/embed \
+  --header 'Content-Type: multipart/form-data' \
+  --form file=@/Users/nassermaronie/Documents/Nasser-resume.pdf
+
+# Response
+{
+  "message": "File embedded successfully"
+}
+向模型提出问题的示例命令：
+
+$ curl --request POST \
+  --url http://localhost:8080/query \
+  --header 'Content-Type: application/json' \
+  --data '{ "query": "Who is Nasser?" }'
+
+# Response
+{
+  "message": "Nasser Maronie is a Full Stack Developer with experience in web and mobile app development. He has worked as a Lead Full Stack Engineer at Ulventech, a Senior Full Stack Engineer at Speedoc, a Senior Frontend Engineer at Irvins, and a Software Engineer at Tokopedia. His tech stacks include Typescript, ReactJS, VueJS, React Native, NodeJS, PHP, Golang, Python, MySQL, PostgresQL, MongoDB, Redis, AWS, Firebase, and Supabase. He has a Bachelor's degree in Information System from Universitas Amikom Yogyakarta."
+}
