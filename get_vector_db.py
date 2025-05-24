@@ -16,4 +16,7 @@ def get_vector_db():
     )
 
     return db
-#代码也不必要，直接在main.py中调用即可
+#代码也不必要，直接在main.py中调用即可  
+if __name__ == "__main__":
+    db = get_vector_db()
+    print(db)
