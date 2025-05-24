@@ -9,3 +9,10 @@ mac:
 ### 导入依赖 
 ``` pip install -r requirements.txt ```
 #### 本项目采用的是ollama提供的llama3模型
+#### 项目成员
+刘金彪
+宁嘉晨
+王凯
+胡家瑞
+谢豪
+张远哲
