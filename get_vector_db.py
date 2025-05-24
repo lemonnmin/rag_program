@@ -16,3 +16,4 @@ def get_vector_db():
     )
 
     return db
+#代码也不必要，直接在main.py中调用即可
